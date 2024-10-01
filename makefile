@@ -13,3 +13,5 @@ publish:
 package-install:
 	pipx install dist/*.whl
 
+package-reinstall:
+	pipx install --force dist/*.whl
