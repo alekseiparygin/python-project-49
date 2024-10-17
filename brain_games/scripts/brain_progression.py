@@ -6,7 +6,7 @@ from brain_games.games import brain_progression_terms
 
 
 def main():
-    engine.game_engine(brain_progression_terms.terms_of_brain_progression, 'What number is missing in this progression?')
+    engine.game_engine(brain_progression_terms.terms_of_brain_progression, 'What number is missing in the progression?')
 
 
 if __name__ == '__main__':
