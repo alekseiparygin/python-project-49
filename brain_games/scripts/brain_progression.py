@@ -3,7 +3,7 @@
 
 from brain_games.scripts import engine
 from brain_games.games import brain_progression_terms
-from brain_games import cli
+
 
 def main():
     engine.game_engine(brain_progression_terms.terms_of_brain_progression, 'What number is missing in this progression?')

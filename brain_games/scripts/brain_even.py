@@ -3,7 +3,7 @@
 
 from brain_games.scripts import engine
 from brain_games.games import brain_even_terms
-from brain_games import cli
+
 
 
 def main():
