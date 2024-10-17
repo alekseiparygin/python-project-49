@@ -6,7 +6,7 @@ from brain_games.games import brain_prime_terms
 
 
 def main():
-    engine.game_engine(brain_prime_terms.terms_of_brain_prime, 'Answer "yes" if the number is prime, otherwise answer "no".')
+    engine.game_engine(brain_prime_terms.terms_of_brain_prime, 'Answer "yes" if given number is prime, otherwise answer "no".')
 
 
 
