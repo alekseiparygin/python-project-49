@@ -2,12 +2,13 @@
 
 
 from brain_games.scripts import engine
-from brain_games.games import brain_gcd_terms
+from brain_games.games import gcd
 
 
 def main():
-    engine.game_engine(brain_gcd_terms.terms_of_brain_gcd, 'Find the greatest common divisor of given numbers.')
+    engine.run_game(gcd.terms, 'Find the greatest common divisor of given numbers.')
 
 
 if __name__ == '__main__':
     main()
+    

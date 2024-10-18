@@ -2,11 +2,11 @@
 
 
 from brain_games.scripts import engine
-from brain_games.games import brain_calc_terms
-from brain_games import cli
+from brain_games.games import calc
+
 
 def main():
-    engine.game_engine(brain_calc_terms.terms_of_brain_calc, 'What is the result of the expression?')
+    engine.run_game(calc.terms, 'What is the result of the expression?')
 
 
 if __name__ == '__main__':

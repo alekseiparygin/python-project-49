@@ -2,11 +2,11 @@
 
 
 from brain_games.scripts import engine
-from brain_games.games import brain_progression_terms
+from brain_games.games import progression
 
 
 def main():
-    engine.game_engine(brain_progression_terms.terms_of_brain_progression, 'What number is missing in the progression?')
+    engine.run_game(progression.terms, 'What number is missing in the progression?')
 
 
 if __name__ == '__main__':

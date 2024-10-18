@@ -10,7 +10,7 @@ def find_gcd(a, b):
     return a + b
 
 
-def terms_of_brain_gcd():
+def terms():
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     expression = f'{num1} {num2}'

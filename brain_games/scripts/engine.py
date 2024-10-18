@@ -1,4 +1,3 @@
-import random
 import prompt
 
 
@@ -16,7 +15,8 @@ def checker(player_answer, correct_answer):
     else:
         return False
 
-def game_engine(game_name, welcome_message, check_func=checker):
+
+def run_game(game_name, welcome_message, check_func=checker):
     name = welcome_user()
     print(welcome_message)
     num_of_rounds = 3
@@ -25,7 +25,8 @@ def game_engine(game_name, welcome_message, check_func=checker):
         print(f'Question: {expression}')
         player_answer = prompt.string('Your answer: ').strip().lower()
         if not checker(player_answer, correct_answer):
-            print(f"'{player_answer}' is a wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
+            print(f"'{player_answer}' is a wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
             break
     else:
         print(f'Congratulations, {name}!')

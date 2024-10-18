@@ -1,7 +1,7 @@
 import random
 
 
-def terms_of_brain_calc():
+def terms():
     num1 = random.randint(0, 10)
     num2 = random.randint(0, 10)
     operator = random.choice(['+', '-', '*'])

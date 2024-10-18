@@ -12,7 +12,7 @@ def make_list():
     return list
 
 
-def terms_of_brain_progression():
+def terms():
     list = make_list()
     index = random.randint(0, len(list) - 1)
     random_element = list[index]
