@@ -21,8 +21,7 @@ def terms():
         random_element = list[index]
         list[index] = '..'
         expression = " ".join(map(str, list))
-        solution = str(random_element)
-        return expression, solution
-    
-    return question, game_logic
+        s = str(random_element)
+        return expression, s
 
+    return question, game_logic

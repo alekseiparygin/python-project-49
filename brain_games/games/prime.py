@@ -16,7 +16,7 @@ def terms():
     def game_logic():
         num = random.randint(1, 100)
         expression = f'{num}'
-        solution = is_prime_number(num)
-        return expression, solution
-    
+        s = is_prime_number(num)
+        return expression, s
+
     return question, game_logic

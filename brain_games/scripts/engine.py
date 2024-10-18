@@ -8,8 +8,8 @@ def welcome_user():
     return name
 
 
-def checker(answer, solution):
-    if answer == solution:
+def checker(a, s):
+    if a == s:
         print('Correct!')
         return True
     else:
@@ -22,11 +22,11 @@ def run_game(game_terms, check_func=checker):
     print(question)
     num_of_rounds = 3
     for _ in range(num_of_rounds):
-        expression, solution = game_logic()
+        expression, s = game_logic()
         print(f'Question: {expression}')
-        answer = prompt.string('Your answer: ').strip().lower()
-        if not checker(answer, solution):
-            print(f"'{answer}' is a wrong answer ;(. Correct answer was '{solution}'.")
+        a = prompt.string('Your answer: ').strip().lower()
+        if not checker(a, s):
+            print(f"'{a}' is a wrong answer ;(. Correct answer was '{s}'.")
             print(f"Let's try again, {name}!")
             break
     else:

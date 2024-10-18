@@ -9,7 +9,7 @@ def terms():
         num2 = random.randint(0, 10)
         operator = random.choice(['+', '-', '*'])
         expression = f'{num1} {operator} {num2}'
-        solution = str(eval(expression))
-        return expression, solution
-    
+        s = str(eval(expression))
+        return expression, s
+
     return question, game_logic
