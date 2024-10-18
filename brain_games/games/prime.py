@@ -11,7 +11,12 @@ def is_prime_number(num):
 
 
 def terms():
-    num = random.randint(1, 100)
-    expression = f'{num}'
-    correct_answer = is_prime_number(num)
-    return expression, correct_answer
+    question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+    def game_logic():
+        num = random.randint(1, 100)
+        expression = f'{num}'
+        solution = is_prime_number(num)
+        return expression, solution
+    
+    return question, game_logic

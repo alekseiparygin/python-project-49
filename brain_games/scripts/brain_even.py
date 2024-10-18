@@ -6,7 +6,7 @@ from brain_games.games import even
 
 
 def main():
-    engine.run_game(even.terms, 'Answer "yes" if the number is even, otherwise answer "no".')
+    engine.run_game(even.terms)
 
 
 if __name__ == '__main__':

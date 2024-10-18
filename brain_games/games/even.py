@@ -6,6 +6,11 @@ def is_even_number(num):
 
 
 def terms():
-    expression = random.randint(1, 100)
-    correct_answer = is_even_number(expression)
-    return expression, correct_answer
+    question = 'Answer "yes" if the number is even, otherwise answer "no".'
+    
+    def game_logic():
+        expression = random.randint(1, 100)
+        solution = is_even_number(expression)
+        return expression, solution
+    
+    return question, game_logic

@@ -6,7 +6,7 @@ from brain_games.games import calc
 
 
 def main():
-    engine.run_game(calc.terms, 'What is the result of the expression?')
+    engine.run_game(calc.terms)
 
 
 if __name__ == '__main__':

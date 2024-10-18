@@ -11,8 +11,13 @@ def find_gcd(a, b):
 
 
 def terms():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
-    expression = f'{num1} {num2}'
-    correct_answer = str(find_gcd(num1, num2))
-    return expression, correct_answer
+    question = 'Find the greatest common divisor of given numbers.'
+
+    def game_logic():
+        num1 = random.randint(1, 100)
+        num2 = random.randint(1, 100)
+        expression = f'{num1} {num2}'
+        solution = str(find_gcd(num1, num2))
+        return expression, solution
+
+    return question, game_logic
