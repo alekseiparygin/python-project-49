@@ -12,16 +12,11 @@ def make_list():
     return list
 
 
-def terms():
-    question = 'What number is missing in the progression?'
-
-    def game_logic():
-        list = make_list()
-        index = random.randint(0, len(list) - 1)
-        random_element = list[index]
-        list[index] = '..'
-        expression = " ".join(map(str, list))
-        s = str(random_element)
-        return expression, s
-
-    return question, game_logic
+def progression():
+    list = make_list()
+    index = random.randint(0, len(list) - 1)
+    random_element = list[index]
+    list[index] = '..'
+    expression = " ".join(map(str, list))
+    s = str(random_element)
+    return expression, s
