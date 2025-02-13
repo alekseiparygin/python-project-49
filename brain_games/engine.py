@@ -2,19 +2,24 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def run_game(game, question):
+MAX_ROUNDS = 3
+
+
+def run_game(game):
     name = welcome_user()
+    question = game.QUESTION
     print(question)
-    num_of_rounds = 3
-    for _ in range(num_of_rounds):
-        expression, s = game()
+    for _ in range(MAX_ROUNDS):
+        expression, correct_answer = game.game()
         print(f'Question: {expression}')
-        a = prompt.string('Your answer: ').strip().lower()
-        if a != s:
-            print(f"'{a}' is a wrong answer ;(. Correct answer was '{s}'.")
+        answer = prompt.string('Your answer: ').strip().lower()
+        if answer != correct_answer:
+            print(
+                f"'{answer}' is a wrong answer ;(. Correct answer was '{correct_answer}'."
+                )
             print(f"Let's try again, {name}!")
-            break
+            return
         else:
             print('Correct!')
-    else:
+    
         print(f'Congratulations, {name}!')

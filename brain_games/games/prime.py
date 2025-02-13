@@ -1,6 +1,9 @@
 import random
 
 
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime_number(num):
     if num < 2:
         return 'no'
@@ -10,8 +13,8 @@ def is_prime_number(num):
     return 'yes'
 
 
-def prime():
+def game():
     num = random.randint(1, 100)
     expression = f'{num}'
-    s = is_prime_number(num)
-    return expression, s
+    correct_answer = is_prime_number(num)
+    return expression, correct_answer
