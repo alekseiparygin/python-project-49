@@ -21,5 +21,5 @@ def run_game(game):
             return
         else:
             print('Correct!')
-    
-        print(f'Congratulations, {name}!')
+            
+    print(f'Congratulations, {name}!')
