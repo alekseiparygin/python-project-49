@@ -3,6 +3,8 @@ from brain_games.cli import welcome_user
 
 
 MAX_ROUNDS = 3
+WRONG_ANSWER_MSG = """'{}' is a wrong answer ;(. Correct answer was '{}'.
+Let's try again, {}!"""
 
 
 def run_game(game):
@@ -14,10 +16,7 @@ def run_game(game):
         print(f'Question: {expression}')
         answer = prompt.string('Your answer: ').strip().lower()
         if answer != correct_answer:
-            print(
-                f"'{answer}' is a wrong answer ;(. Correct answer was '{correct_answer}'."
-                )
-            print(f"Let's try again, {name}!")
+            print(WRONG_ANSWER_MSG.format(answer, correct_answer, name))
             return
         else:
             print('Correct!')
