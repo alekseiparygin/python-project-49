@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 
 
-import brain_games.engine as engine
-import brain_games.games.gcd as gcd
+from brain_games import engine
+from brain_games.games import gcd
 
 
 def main():
